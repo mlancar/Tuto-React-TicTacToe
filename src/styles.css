@@ -34,10 +34,18 @@ body {
 #app {
 
 }
+
+.boardrow {
+  height: 100px;
+}
+
 .square {
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  outline: none;
+  padding: 0;
   margin: 1px;
   border-radius: 8px;
-  border: 1px solid transparent;
   font-size: 50px;
   font-weight: 500;
   font-family: inherit;
@@ -47,6 +55,14 @@ body {
   width:100px;
   height: 100px;
   text-align: center;
+}
+
+.square:active {
+  transform: none;
+}
+
+.square:focus-visible {
+  outline: none;
 }
 
 .square:hover {
